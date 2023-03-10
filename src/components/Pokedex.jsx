@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokecard from './Pokecard';
+import './Pokedex.css';
 
 const Pokedex = () => {
   const characters = [
@@ -14,16 +15,18 @@ const Pokedex = () => {
   ];
 
   return (
-    <div className="pokedex">
+    <div className="Pokedex">
       <h2>Pokedex</h2>
-      {characters.map((pokemon) => (
-        <Pokecard
-          id={pokemon.id}
-          name={pokemon.name}
-          type={pokemon.type}
-          exp={pokemon.base_experience}
-        />
-      ))}
+      <div className="Pokedex-container">
+        {characters.map((pokemon) => (
+          <Pokecard
+            id={pokemon.id}
+            name={pokemon.name}
+            type={pokemon.type}
+            exp={pokemon.base_experience}
+          />
+        ))}
+      </div>
     </div>
   );
 };

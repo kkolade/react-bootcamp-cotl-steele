@@ -1,0 +1,11 @@
+.Pokecard{ 
+  background-color: #e4e4e4;
+  border: 2px solid  #aeaeae;
+  border-radius: 15px;
+  width: 22%;
+  margin-bottom: 2rem;
+}
+
+.Pokecard-type, .Pokecard-exp {
+  display: block;
+}
